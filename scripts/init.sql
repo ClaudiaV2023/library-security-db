@@ -10,3 +10,5 @@ CREATE TABLE users (
     "nickname" VARCHAR(50),
     "password" VARCHAR(50)
 );
+
+INSERT INTO users (name, lastname, email, nickname, password) VALUES ('admin', 'admin', 'admin@gmail.com', 'admin', 'admin');
