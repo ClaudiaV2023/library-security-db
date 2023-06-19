@@ -1,5 +1,3 @@
-CREATE DATABASE "db-library-security";
-
 \c "db-library-security";
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
