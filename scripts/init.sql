@@ -11,4 +11,4 @@ CREATE TABLE users (
     "password" VARCHAR(50)
 );
 
-INSERT INTO users (name, lastname, email, nickname, password) VALUES ('admin', 'admin', 'admin@gmail.com', 'admin', 'admin');
+INSERT INTO users (name, lastname, email, nickname, password) VALUES ('admin', 'admin', 'admin@gmail.com', 'admin', 'password');
