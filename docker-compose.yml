@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  postgres-database:
+    container_name: library-security-postgres-database
+    image: postgres:11
+    ports:
+      - 35432:5432
+    environment:
+      POSTGRES_DB: library-security-db
+      POSTGRES_USER: library
+      POSTGRES_PASSWORD: library
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+      TZ: UTC
+    hostname: library-security-postgres
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Volumen local 
+    # volumes:
+    #   - ./db/data:/var/lib/postgresql/data
+    # Volumen en docker
+    # volumes:
+    #   - dbdata:/var/lib/postgresql/data
+    networks:
+      - library-network
+# Volumen en docker
+# volumes:
+#   dbdata:
+networks:
+  library-network:
+    driver: bridge
