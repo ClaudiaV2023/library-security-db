@@ -1,6 +1,6 @@
 ### Crear red de docker
 ```bash
-$ docker network create net-library
+$ docker network create net-library2
 ```
 
 ### Crear volumen de docker
